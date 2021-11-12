@@ -33,10 +33,10 @@ export class SignupComponent implements OnInit {
   }
 
   onSubmit(): void {
-    let { username, email, phone, is_patient, is_doctor, role, password } =
+    let { username, email, phone, is_customer, is_admin, role, password } =
       this.form;
 
-    this.authService.register(username, email, phone, role = 'is_patient', password).subscribe(
+    this.authService.register(username, email, phone, role = 'is_customer', password).subscribe(
       (data) => {
         console.log(data);
         this.isSuccessful = true;

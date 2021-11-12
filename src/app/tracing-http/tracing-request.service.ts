@@ -6,7 +6,7 @@ import { Tracing } from '../tracing-class/tracing';
 import { catchError } from 'rxjs/operators';
 import { Data } from '@angular/router';
 
-const contactapi = "https://djangoangulartest.herokuapp.com/contact/";
+const contactapi = "http://127.0.0.1:8000/referral/";
 
 
 const httpOptions = {
@@ -21,7 +21,7 @@ export class TracingRequestService {
     throw new Error('Method not implemented.');
   }
 
-  private api = "https://djangoangulartest.herokuapp.com/contact/";
+  private api = "http://127.0.0.1:8000/referral/";
 
   httpOptions = {
     headers: new HttpHeaders({

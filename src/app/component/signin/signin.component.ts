@@ -9,10 +9,7 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./signin.component.css']
 })
 export class SigninComponent implements OnInit {
-  // form: any = {
-  //   username: null,
-  //   password: null
-  // };
+
   form;
   isLoggedIn = false;
   isLoginFailed = false;
@@ -34,7 +31,7 @@ export class SigninComponent implements OnInit {
     }
   }
   onSubmit() {
-    this.authService.login(this.form).subscribe((res: Response) => {
+    this.authService.login(this.form).subscribe((res: any) => {
       console.log(res)
       localStorage.setItem('accessToken', res['token'])
       localStorage.setItem('username', res['username'])
@@ -43,11 +40,11 @@ export class SigninComponent implements OnInit {
     
       this.toastr.success('Logged in successfully.Welcome to Kinetik Internet.');
   
-      if ((res['role']) === "is_doctor") {
-        this.router.navigate(['doctor']);
+      if ((res['role']) === "is_admin") {
+        this.router.navigate(['admin']);
       }
       else{
-        this.router.navigate(['patient']);
+        this.router.navigate(['customer']);
       }
 
     }, error => {

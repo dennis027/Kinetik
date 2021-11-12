@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 })
 export class DoctorInputService {
 
-  private api = "https://djangoangulartest.herokuapp.com/doctorsinpunt/";
+  private api = "http://127.0.0.1:8000/admininpunt/";
 
   httpOptions = {
     headers: new HttpHeaders({

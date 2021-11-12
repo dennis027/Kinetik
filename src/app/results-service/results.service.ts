@@ -10,7 +10,7 @@ import { stringify } from '@angular/compiler/src/util';
   providedIn: 'root'
 })
 export class ResultsRequestService {
-  private api = "https://djangoangulartest.herokuapp.com/patientinpunt/";
+  private api = "http://127.0.0.1:8000/Customerinpunt/";
   
   onDoctorSelect: BehaviorSubject<any> = new BehaviorSubject<any>(null);
 
