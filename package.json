@@ -30,6 +30,7 @@
     "@ngx-progressbar/core": "^3.0.2",
     "@ngx-progressbar/http-client": "^3.0.2",
     "bootstrap": "^5.1.0",
+    "cors-anywhere": "^0.4.4",
     "google-maps-ng2": "^1.0.10",
     "ngx-google-places-autocomplete": "^2.0.5",
     "ngx-toastr": "^14.1.0",

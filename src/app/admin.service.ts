@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-const AUTH_API = "https://djangoangulartest.herokuapp.com/doctorsinpunt/";
+const AUTH_API =  "http://127.0.0.1:8000/admininpunt/";
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
@@ -17,7 +17,7 @@ export class DoctorInputService {
     return this.http.post(AUTH_API , {
       name,
       status,
-      recomendations,
+      recomendations,             
       remarks,
     }, httpOptions);
   }

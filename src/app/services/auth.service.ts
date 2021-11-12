@@ -41,10 +41,10 @@ export class AuthService {
     return this.http.get<any[]>(AUTH_API + 'user/',);
   }
   getPatients(): Observable<any[]> {
-    return this.http.get<any[]>(AUTH_API + 'patientinpunt/',);
+    return this.http.get<any[]>(AUTH_API + 'Customerinpunt/',);
   }
 
   getStatus(): Observable<any> {
-    return this.http.get<any[]>(AUTH_API + 'doctorsinpunt/',);
+    return this.http.get<any[]>(AUTH_API + 'admininpunt/',);
   }
 }

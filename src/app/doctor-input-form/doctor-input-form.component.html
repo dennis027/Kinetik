@@ -14,11 +14,11 @@
         <label for="status">Status</label>
         <select [(ngModel)]="newInput.status" [ngModelOptions]="{standalone: true}" id="status" name="status" required
           class="form-control">
-          <option [value]="'positive'">
-            Possible
+          <option [value]="'available'">
+            available
           </option>
-          <option [value]="'negative'">
-            Imposible
+          <option [value]="'unavailable'">
+            unavailable
           </option>
         </select>
       </div>
@@ -26,11 +26,11 @@
         <label for="recomendations">Recomendations</label>
         <select [(ngModel)]="newInput.recomendations" [ngModelOptions]="{standalone: true}" id="recomendations"
           name="recomendations" required class="form-control">
-          <option [value]="'hospital care'">
-            Wait for invoice
+          <option [value]="'wait we will give feedback on installation'">
+            wait we will give feedback on installation
           </option>
-          <option [value]="'home care'">
-            We are currently not available
+          <option [value]="'sorry our services are not available now'">
+            sorry our services are not available now
           </option>
         </select>
       </div>

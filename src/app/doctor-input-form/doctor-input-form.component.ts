@@ -18,12 +18,12 @@ export class DoctorInputFormComponent implements OnInit {
     recomendations: [],
     remarks: null,
   };
-  patientsNames!: any[];
+  patientsNames!: any[]; 
   patients: any[];
   PatId: any;
 
   showSuccess() {
-    this.toastr.success('Recomendations successfully submitted and updated to the patients dashboard');
+    this.toastr.success('Recomendations successfully submitted and updated to the customers dashboard');
   }
 
 
