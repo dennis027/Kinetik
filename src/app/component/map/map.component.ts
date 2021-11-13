@@ -32,22 +32,24 @@ export class MapComponent implements OnInit {
   patientInput: any = {
     user: null,
     name: null,
-    symptoms: null,
+    phonenumber: null,
     location: null,
   };
   user_id: any;
   username: any;
+  phonenumber:any;
+  location:any;
 
   public address!: any;
   public locality!: any;
   public coordinates!: any;
   public queryResult!: string;
 
-  public location = {
-    address: this.address,
-    coordinates: this.coordinates,
-    locality: this.locality,
-  };
+  // public location = {
+  //   address: this.address,
+  //   coordinates: this.coordinates,
+  //   locality: this.locality,
+  // };
 
   public addLocation() {
     this.location.address = this.address;
@@ -67,31 +69,41 @@ export class MapComponent implements OnInit {
     new initMap();
     this.user_id = localStorage.getItem('user_id');
     this.username = localStorage.getItem('username');
-    this.storedlocation = localStorage.getItem('address');
-    this.storedcoord = localStorage.getItem('coordinates');
-    this.storedcity = localStorage.getItem('locality');
+    this.phonenumber = localStorage.getItem('phonenumber');
+    this.location = localStorage.getItem('location');
+    
+    
+    
+    // this.storedlocation = localStorage.getItem('address');
+    // this.storedcoord = localStorage.getItem('coordinates');
+    // this.storedcity = localStorage.getItem('locality');
   }
 
   submitInput(): void {
-    this.storedlocation = localStorage.getItem('address');
-    this.storedcoord = localStorage.getItem('coordinates');
-    this.storedcity = localStorage.getItem('locality');
+    // this.storedlocation = localStorage.getItem('address');
+    // this.storedcoord = localStorage.getItem('coordinates');
+    // this.storedcity = localStorage.getItem('locality');
     this.user_id = localStorage.getItem('user_id');
     this.username = localStorage.getItem('username');
-    let location = this.storedcity + ' , ' + this.storedcoord;
+    this.phonenumber = localStorage.getItem('phonenumber');
+    this.location = localStorage.getItem('location');
+    // let location = localStorage.getItem('location');
     let user = this.user_id;
     let name = this.username;
+    let phonenumber= this.phonenumber;
+    let location= this.location;
 
     let { symptoms } = this.newInput;
-    this.patientInput = { user, name, location, symptoms };
+    this.patientInput = { user, name, phonenumber, location };
     console.log(this.patientInput);
 
     this.resultsService
       .addPatient(
         (user = this.user_id),
         (name = this.username),
-        (location = this.storedcity + ' , ' + this.storedcoord),
-        symptoms
+         (phonenumber= this.phonenumber),
+        (location = this.location),
+        
       )
       .subscribe((data) => {
         console.log(data);

@@ -34,6 +34,8 @@ import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
 import { NewComponentComponent } from './new-component/new-component.component';
 import { CoverangeComponent } from './coverange/coverange.component';
 
+import { MatButtonModule } from '@angular/material/button';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 @NgModule({
   declarations:[
@@ -76,8 +78,11 @@ import { CoverangeComponent } from './coverange/coverange.component';
     ToastrModule.forRoot(),
     NgProgressModule.forRoot(),
     NgProgressHttpClientModule,
-
-    BrowserAnimationsModule
+    MatButtonToggleModule,
+    BrowserAnimationsModule,
+    MatButtonToggleModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [authInterceptorProviders,NgbModalConfig, NgbModal],
   bootstrap: [AppComponent],

@@ -4,39 +4,9 @@
     <hr>
     <div class="row">
       <div class="col-md-12">
-        <div class="card-container container maps">
-          <div class="map" id="map"></div>
-        </div>
         <div class="container" style="margin-top:5%">
           <form (ngSubmit)='submitInput()' name="form" #goalForm='ngForm'>
-            <div>
-              <img class="sb-title-icon"
-                src="https://fonts.gstatic.com/s/i/googlematerialicons/location_pin/v5/24px.svg" alt="">
-            </div>
-            <label for="location">Address Select</label>
-            <input type="text" id="location" class="details form-control" [(ngModel)]="address" name="address" />
-            <div class="half-input-container form-row mb-4">
-              <div class="col">
-
-                <label for="administrative_area_level_1">County</label>
-                <input type="text" class="half-input details form-control" id="administrative_area_level_1" />
-              </div>
-              <div class="col">
-                <label for="locality">City</label>
-                <input type="text" id="locality" class="half-input details form-control" />
-              </div>
-            </div>
-            <div class="half-input-container form-row mb-4">
-              <div class="col">
-                <label for="country">Country</label>
-                <input type="text" class="details form-control" id="country" />
-              </div>
-              <div class="col">
-                <label for="coordinates">Coordinates</label>
-                <input type="text" id="coordinates" class="details form-control" [(ngModel)]="coordinates"
-                  name="coordinates" />
-              </div>
-            </div>
+           
             <div class="half-input-container form-row mb-4">
               <div class="col">
                 <label form=name>User ID</label>
@@ -51,8 +21,14 @@
             </div>
             <div class="form-group">
               <div class="form-group">
-                <label for="symptoms">More Info about location</label>
-                <input type="text" class="form-control" id="symptoms" [(ngModel)]="newInput.symptoms" name="symptoms"
+                <label for="phonenumber">Phonenumber</label>
+                <input type="text" class="form-control" id="phonenumber" [(ngModel)]="newInput.phonenumber" name="phonenumber"
+                  #name='ngModel' required></div>
+            </div>
+            <div class="form-group">
+              <div class="form-group">
+                <label for="location">More Info about location</label>
+                <input type="text" class="form-control" id="location" [(ngModel)]="newInput.location" name="location"
                   #name='ngModel' required></div>
             </div>
             <div class="form-group">

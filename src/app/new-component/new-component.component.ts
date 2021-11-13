@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatButtonToggleChange } from '@angular/material/button-toggle';
 
 @Component({
   selector: 'app-new-component',
@@ -6,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./new-component.component.css']
 })
 export class NewComponentComponent implements OnInit {
+  toggle: boolean = true;
+  constructor() {}
 
-  constructor() { }
+  toggleView(change: MatButtonToggleChange) {
+     this.toggle = change.value;
+  }
 
   ngOnInit(): void {
   }

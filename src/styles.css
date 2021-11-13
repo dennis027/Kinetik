@@ -2,6 +2,11 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .sb-title {

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+h1,h6,h5{
+    display: inline;
+  }
+
+.panel-body{
+    border-left: 6px solid green;
+    height: auto;
+}  
+
+.head{
+    background-image: url("https://i2.wp.com/www.alphr.com/wp-content/uploads/2019/09/how-to-use-internet-without-data-plan-or-charge-on-your-phone.jpg?fit=1000%2C666&ssl=1");
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    color: beige;
+}
+.plain{
+    font-family: 'Satisfy', cursive;
+    font-size: 500%;
+    
+}

@@ -5,6 +5,6 @@
 export interface Results {
     id: number;
     name: string;
-    number: number;
+    phonenumber: number;
     location: string;
 }

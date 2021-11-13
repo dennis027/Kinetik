@@ -13,6 +13,7 @@ import { DoctorInputComponent } from './doctor-input/doctor-input.component';
 import { MapComponent } from './component/map/map.component';
 import { PatientsComponent } from './component/customers/customers.component';
 import { CoverangeComponent } from './coverange/coverange.component';
+import { NewComponentComponent } from './new-component/new-component.component';
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: 'home/signin', component: SigninComponent },
@@ -27,9 +28,7 @@ const routes: Routes = [
   {path: 'googlemaps', component: MapComponent}, 
   {path:'customers',component: PatientsComponent},
   {path:'coverange', component:CoverangeComponent},
-
-
-  // { pathMatch: 'full', redirectTo: 'home', path: '' },
+  {path:'dataplan' , component:NewComponentComponent},
   { path: '**', component: PageNotfoundComponent },
 ];
 @NgModule({
