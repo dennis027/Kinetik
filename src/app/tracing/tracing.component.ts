@@ -12,7 +12,7 @@ export class TracingComponent implements OnInit {
     user: null,
     name: null,
     contact: 0,
-    date: new Date(),
+    location: null,
   };
 
   isSuccessful = false;
@@ -38,8 +38,8 @@ export class TracingComponent implements OnInit {
   }
   submitTrace(): void {
     this.user_id = localStorage.getItem('user_id')
-    let { user, name, contact, date } = this.newTracing;
-    this.tracingService.addData(user = this.user_id, name, contact, date).subscribe(
+    let { user, name, contact, location } = this.newTracing;
+    this.tracingService.addData(user = this.user_id, name, contact, location).subscribe(
       data => {
         console.log(data);
       },

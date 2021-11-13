@@ -35,12 +35,12 @@ export class TracingRequestService {
     return this.httpClient.get<any[]>(this.api);
   }
 
-  addData(user: string, name: string, contact: number, date: Date): Observable<any> {
+  addData(user: string, name: string, contact: number, location: string): Observable<any> {
     return this.httpClient.post(contactapi, {
       user,
       name,
       contact,
-      date,
+      location,
     }, httpOptions);
   }
   deletePatient(id: number): Observable<any[]> {

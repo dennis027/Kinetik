@@ -5,6 +5,6 @@
 export interface Results {
     id: number;
     name: string;
-    symptoms: string;
+    number: number;
     location: string;
 }

@@ -10,7 +10,7 @@
           <th></th>
           <th scope="col"> Customer Names</th>
           <th scope="col">Location</th>
-          <th scope="col">more information</th>
+          <th scope="col">Number</th>
           <th>Remark</th>
         </tr>
       </thead>
@@ -19,7 +19,7 @@
           <th></th>
           <td>{{ item.name }}</td>
           <td>{{ item.location }}</td>
-          <td>{{ item.symptoms}}</td>
+          <td>{{ item.number}}</td>
           <td style="font-size:17px;"><a routerLink="/admininput" class="btn btn-info btn-sm"  (click)="selected($event,item.id)">Remark</a>
           </td>
         </tr>

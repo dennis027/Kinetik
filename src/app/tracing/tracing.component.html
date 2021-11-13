@@ -27,7 +27,7 @@
 
             <th>Name</th>
             <th>Phone</th>
-            <th>Date</th>
+            <th>Location</th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -45,7 +45,7 @@
             <!-- <th>{{item.user}}</th> -->
             <td>{{ item.name }}</td>
             <td>{{ item.contact }}</td>
-            <td>{{ item.date}}</td>
+            <td>{{ item.location}}</td>
 
             <td>
               <!-- <a href="#editTracingModal" class="edit" (click)="updatePatient(item.id)" data-toggle="modal"><i class="material-icons"
@@ -95,8 +95,8 @@
                               </div> -->
           </div>
           <div class="form-group">
-            <label>Date</label>
-            <input type="date" class="form-control" [(ngModel)]="newTracing.date" #date='ngModel' name="date" required>
+            <label>Location</label>
+            <input type="location" class="form-control" [(ngModel)]="newTracing.location" #date='ngModel' name="location" required>
           </div>
         </div>
         <div class="modal-footer">
@@ -126,7 +126,7 @@
             <input type="text" class="form-control" required>
           </div>
           <div class="form-group">
-            <label>Date</label>
+            <label>Location</label>
             <input type="text" class="form-control" required>
           </div>
         </div>
