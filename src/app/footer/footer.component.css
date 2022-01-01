@@ -1,8 +1,48 @@
+/*WindowOnload Fade-In*/
 
-.footer-basic {
+@keyframes chainReaction {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  .parallax-window .welcome-page-div {
+    animation: chainReaction 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    text-align: center;
+    font-family: Beautiful ES;
+    font-size: 30px;
+    font-weight: lighter;
+  }
+  
+  .parallax-window .welcome-page-div:nth-child(1) {
+    animation-delay: .3s;
+  }
+  
+  .parallax-window .welcome-page-div:nth-child(2) {
+    animation-delay: 2s;
+  }
+  
+  
+  /*WindowOnload Fade-In*/
+
+  .wars{
+    background-image: url(https://previews.123rf.com/images/candy18/candy181907/candy18190700015/129789408-open-book-in-the-grass-on-the-field.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  
+  }
+
+  .footer-basic {
     padding:40px 0;
-    background-color:#ffffff;
-    color:#4b4c4d;
+    background: rgba(33, 49, 63, 0.82);
+    color:#72a7dd;
   }
   
   .footer-basic ul {
@@ -41,7 +81,7 @@
     display:inline-block;
     text-align:center;
     border-radius:50%;
-    border:1px solid #ccc;
+    border:1px solid rgb(177, 247, 47);
     margin:0 8px;
     color:inherit;
     opacity:0.75;
@@ -55,8 +95,6 @@
     margin-top:15px;
     text-align:center;
     font-size:13px;
-    color:#aaa;
+    color:rgb(201, 236, 72);
     margin-bottom:0;
   }
-  
-  /* Credit to https://epicbootstrap.com/snippets/footer-basic */

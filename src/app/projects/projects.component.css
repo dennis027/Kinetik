@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Courgette&display=swap');
+.background{
+    background-image: url("https://studentprojectguide.com/wp-content/uploads/2017/12/library-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#one{
+    font-family: 'Satisfy', cursive;
+    color:yellow;
+    font-size:550%;
+}
+.over{
+    background: rgba(33, 49, 63, 0.82);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+}
+
+img{ 
+    width: 100%;
+}
