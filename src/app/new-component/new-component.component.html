@@ -1,0 +1,201 @@
+<app-navbar></app-navbar>
+ <br><br>
+ <div class="head">
+
+    <br><br><br> <br>
+    <div class="text-center position-relative" ><h1 class="plain">Kinetik Dataplan</h1></div>
+ </div>   
+
+ <br><br><br>
+     
+ <div class=text-center>
+<mat-button-toggle-group [value]="toggle" (change)="toggleView($event)">
+    <mat-button-toggle [value]="true" class="one">
+        Home
+    </mat-button-toggle>
+    <mat-button-toggle [value]="false" class=two>
+        Business
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+</div>
+  <!-- home bundle -->
+ 
+  <div *ngIf="toggle">
+
+    <br><br><br>
+<div class = "container">
+  <div class="row">
+    <div class ="col-md-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading"><h2 class="text-center">BRONZE</h2></div>
+        <div class="panel-body" style="background-color:rgb(205, 127, 50)">
+            <h1>3</h1><h6>MBPS</h6>
+            <br><br><br>
+            <p>&#9989; Fast Browsing</p>
+            <p>&#9989; Reliable connectivity</p>
+            <p>&#9989; Live Streaming of Music, videos</p>
+            <p>&#10060; Superfast Downloads</p>
+            <p>&#10060; CCTV Device capabilities</p>
+            <hr class="line">
+            <em class="text-center"><b> <h5>Ksh.</h5> <h1>1500</h1></b></em>
+            <h4><i>per month</i></h4>
+           
+        </div>
+      </div>
+    </div>
+    <div class ="col-md-3">
+      <div class="panel panel-success">
+        <div class="panel-heading"><h2 class="text-center">SILVER</h2></div>
+        <div class="panel-body" style="background-color:#C0C0C0">
+          <h1>4</h1><h6>MBPS</h6>
+          <br><br><br>
+          <p>&#9989; Fast Browsing</p>
+          <p>&#9989; Reliable connectivity</p>
+          <p>&#9989; Live Streaming of Music, videos</p>
+          <p>&#9989; Superfast Downloads</p>
+          <p>&#10060; CCTV Device capabilities</p>
+          <hr class="line">
+            <em class="text-center"><b> <h5>Ksh.</h5> <h1>2000</h1></b></em>
+            <h4><i>per month</i></h4>
+        </div>
+      </div>
+    </div>
+    <div class ="col-md-3">
+      <div class="panel panel-warning">
+        <div class="panel-heading"><h2 class="text-center">GOLD</h2></div>
+        <div class="panel-body " style="background-color: #FFD700;">
+          <h1>5</h1><h6>MBPS</h6>
+          <br><br><br>
+          <p>&#9989; Fast Browsing</p>
+          <p>&#9989; Reliable connectivity</p>
+          <p>&#9989; Live Streaming of Music, videos</p>
+          <p>&#9989; Multiple Device Streaming</p>
+          <p>&#9989; CCTV Device capabilities</p>
+          <hr class="line">
+            <em class="text-center"><b> <h5>Ksh.</h5> <h1>2500</h1></b></em>
+            <h4><i>per month</i></h4>
+        </div>
+      </div>
+    </div>
+    <div class ="col-md-3">
+      <div class="panel panel-danger">
+        <div class="panel-heading"><h2 class="text-center">DIAMOND</h2></div>
+        <div class="panel-body" style="background-color: #b9f2ff;">
+          <h1>6</h1><h6>MBPS</h6>
+          <br><br><br>
+          <p>&#9989; Fast Browsing</p>
+          <p>&#9989; Hyperfast Video Download</p>
+          <p>&#9989; Live Streaming of Music, videos</p>
+          <p>&#9989; Multiple Device Streaming</p>
+          <p>&#9989; CCTV Device capabilities</p>
+          <hr class="line">
+            <em class="text-center"><b> <h5>Ksh.</h5> <h1>3000</h1></b></em>
+            <h4><i>per month</i></h4>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+<br>
+
+ 
+
+  <!-- business bundle -->
+  <div *ngIf="!toggle">
+    <br><br><br>
+    <div class = "container">
+      <div class="row">
+        <div class ="col-md-3">
+          <div class="panel panel-primary">
+            <div class="panel-heading"><h2 class="text-center">BRONZE</h2></div>
+            <div class="panel-body" style="background-color:rgb(205, 127, 50)">
+                <h1>5</h1><h6>MBPS</h6>
+                <br><br><br>
+                <p>&#9989; Fast Browsing</p>
+                <p>&#9989; Reliable connectivity</p>
+                <p>&#9989; Live Streaming of Music, videos</p>
+                <p>&#10060; Superfast Downloads</p>
+                <p>&#10060; CCTV Device capabilities</p>
+                <hr class="line">
+                <em class="text-center"><b> <h5>Ksh.</h5> <h1>3000</h1></b></em>
+                <h4><i>per month</i></h4>
+               
+            </div>
+          </div>
+        </div>
+        <div class ="col-md-3">
+          <div class="panel panel-success">
+            <div class="panel-heading" ><h2 class="text-center">SILVER</h2></div>
+            <div class="panel-body" style="background-color:#C0C0C0">
+              <h1>10</h1><h6>MBPS</h6>
+              <br><br><br>
+              <p>&#9989; Fast Browsing</p>
+              <p>&#9989; Reliable connectivity</p>
+              <p>&#9989; Live Streaming of Music, videos</p>
+              <p>&#9989; Superfast Downloads</p>
+              <p>&#10060; CCTV Device capabilities</p>
+              <hr class="line">
+                <em class="text-center"><b> <h5>Ksh.</h5> <h1>4000</h1></b></em>
+                <h4><i>per month</i></h4>
+            </div>
+          </div>
+        </div>
+        <div class ="col-md-3">
+          <div class="panel panel-warning">
+            <div class="panel-heading"><h2 class="text-center">GOLD</h2></div>
+            <div class="panel-body " style="background-color: #FFD700;">
+              <h1>15</h1><h6>MBPS</h6>
+              <br><br><br>
+              <p>&#9989; Fast Browsing</p>
+              <p>&#9989; Reliable connectivity</p>
+              <p>&#9989; Live Streaming of Music, videos</p>
+              <p>&#9989; Multiple Device Streaming</p>
+              <p>&#9989; CCTV Device capabilities</p>
+              <hr class="line">
+                <em class="text-center"><b> <h5>Ksh.</h5> <h1>7500</h1></b></em>
+                <h4><i>per month</i></h4>
+            </div>
+          </div>
+        </div>
+        <div class ="col-md-3">
+          <div class="panel panel-danger">
+            <div class="panel-heading"><h2 class="text-center">DIAMOND</h2></div>
+            <div class="panel-body" style="background-color: #b9f2ff;">
+              <h1>20</h1><h6>MBPS</h6>
+              <br><br><br>
+              <p>&#9989; Fast Browsing</p>
+              <p>&#9989; Hyperfast Video Download</p>
+              <p>&#9989; Live Streaming of Music, videos</p>
+              <p>&#9989; Multiple Device Streaming</p>
+              <p>&#9989; CCTV Device capabilities</p>
+              <hr class="line">
+                <em class="text-center"><b> <h5>Ksh.</h5> <h1>10000</h1></b></em>
+                <h4><i>per month</i></h4>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div></div>
+
+      <div class="text-center">
+        <mat-button-toggle-group name="fontStyle" appearance="legacy" style="font-size: x-large;">
+          <mat-button-toggle value="underline"><a href="home/signup">Create account to subscribe</a></mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+    
+ 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <app-footer></app-footer>
+      <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+          
+            $(".one").delay(800).fadeIn();
+            $(".two").delay(800).fadeIn();
+          
+          });
+        });
+        </script>
+
+        
