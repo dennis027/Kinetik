@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 import { Router } from '@angular/router';
 
-const AUTH_API = "http://127.0.0.1:8000/";
+const AUTH_API = "https://kinetik-backend.herokuapp.com/";
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })

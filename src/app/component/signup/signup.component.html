@@ -5,7 +5,7 @@
   
 
 </style>
-<ng-progress></ng-progress>
+
 <div class="container mt-5" style="font-family: 'Yeon Sung', cursive; margin-top:5%;">
   <div class="col-md-6 mx-auto" style="margin-top:10%;">
     <form *ngIf="!isSuccessful" name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate
@@ -35,6 +35,7 @@
             </div>
           </div>
         </div>
+        <br>
         <div class="col">
           <input type="number" class="form-control" minlength="13" maxlength="13" placeholder="phone" name="phone"
             [(ngModel)]="form.phone" required phone #phone="ngModel" />

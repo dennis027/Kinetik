@@ -6,7 +6,7 @@ import { Tracing } from '../tracing-class/tracing';
 import { catchError } from 'rxjs/operators';
 import { Data } from '@angular/router';
 
-const contactapi = "http://127.0.0.1:8000/referral/";
+const contactapi = "https://kinetik-backend.herokuapp.com/referral/";
 
 
 const httpOptions = {
@@ -21,7 +21,7 @@ export class TracingRequestService {
     throw new Error('Method not implemented.');
   }
 
-  private api = "http://127.0.0.1:8000/referral/";
+  private api = "https://kinetik-backend.herokuapp.com/referral/";
 
   httpOptions = {
     headers: new HttpHeaders({

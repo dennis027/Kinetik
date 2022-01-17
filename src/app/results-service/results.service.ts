@@ -10,7 +10,7 @@ import { stringify } from '@angular/compiler/src/util';
   providedIn: 'root'
 })
 export class ResultsRequestService {
-  private api = "http://127.0.0.1:8000/customerinpunt";
+  private api = "https://kinetik-backend.herokuapp.com/customerinpunt/";
   
   onDoctorSelect: BehaviorSubject<any> = new BehaviorSubject<any>(null);
 

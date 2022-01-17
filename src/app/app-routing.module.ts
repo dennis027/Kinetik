@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { PageNotfoundComponent } from './page-notfound/page-notfound.component';
-import { SigninComponent } from './component/signin/signin.component';
-import { SignupComponent } from './component/signup/signup.component';
+
 import { DocDashComponent } from './component/admin/admin.component';
 import { PatientDashComponent } from './component/customer-das/customer-das.component';
 import { PatientInputFormComponent } from './customer/customer.component';
@@ -14,10 +13,13 @@ import { MapComponent } from './component/map/map.component';
 import { PatientsComponent } from './component/customers/customers.component';
 import { CoverangeComponent } from './coverange/coverange.component';
 import { NewComponentComponent } from './new-component/new-component.component';
+import { SigninComponent } from './component/signin/signin.component';
+import { LoginComponent } from './auth/login/login.component';
+import { SignupComponent } from './component/signup/signup.component';
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
-  { path: 'home/signin', component: SigninComponent },
-  { path: 'home/signup', component: SignupComponent },
+  {path:'signin',component:SigninComponent},
+  {path:'signup',component:SignupComponent},
   { path: 'home', component: LandingpageComponent },
   { path: 'admin', component: DocDashComponent },
   { path: 'customer', component: PatientDashComponent },
@@ -29,6 +31,7 @@ const routes: Routes = [
   {path:'customers',component: PatientsComponent},
   {path:'coverange', component:CoverangeComponent},
   {path:'dataplan' , component:NewComponentComponent},
+  {path:'login',component:LoginComponent},
   { path: '**', component: PageNotfoundComponent },
 ];
 @NgModule({
