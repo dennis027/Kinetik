@@ -65,6 +65,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { LoginComponent } from './auth/login/login.component';
+import { TuongeeComponent } from './tuongee/tuongee.component';
 
 @NgModule({
   declarations:[
@@ -92,6 +93,7 @@ import { LoginComponent } from './auth/login/login.component';
     NewComponentComponent,
     CoverangeComponent,
     LoginComponent,
+    TuongeeComponent,
 
   ],
   imports: [

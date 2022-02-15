@@ -16,6 +16,9 @@ import { NewComponentComponent } from './new-component/new-component.component';
 import { SigninComponent } from './component/signin/signin.component';
 import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './component/signup/signup.component';
+import { ContactsComponent } from './component/contacts/contacts.component';
+import { TuongeeComponent } from './tuongee/tuongee.component';
+
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   {path:'signin',component:SigninComponent},
@@ -32,6 +35,7 @@ const routes: Routes = [
   {path:'coverange', component:CoverangeComponent},
   {path:'dataplan' , component:NewComponentComponent},
   {path:'login',component:LoginComponent},
+  {path:'contact' , component:TuongeeComponent},
   { path: '**', component: PageNotfoundComponent },
 ];
 @NgModule({

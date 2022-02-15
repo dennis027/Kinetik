@@ -1,20 +1,121 @@
-<!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
-<nav class="navbar navbar-expand-lg navbar-info bg-info fixed-top" style="font-family: 'Chela One', cursive;">
-  <img src="https://img.icons8.com/material/24/000000/wifi--v3.png"/>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link" routerLinkActive='active' routerLink="/" style="color: black; font-size: 20pt;">Kinetik Internet®</a>  
+<div>
+  <div class="topnav" id="myTopnav">
+      <mat-toolbar color="bg-success">
+        <mat-toolbar-row style="height: 100px; " >
+        
+          <span><a href="home"><img class="logo" id="logo" src="./assets/photos/kinetik.png" alt="" style="  
+            max-width: 180px;
+            height: auto;
+           margin-left:0;"> </a> </span>
+          <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm style="position:fixed; right:10px">
+              <div class="container" onclick="myFunction(this)"  >
+                  <div class="bar1"></div> 
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+            </button>
+            
+          <div fxShow="true" fxHide.lt-md="true" style="padding: 100px;" class="container-fluid" >
+            <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+          
+              <!-- <button mat-button [matMenuTriggerFor]="menu" class="e"><b>About Us</b></button>
+              <mat-menu #menu="matMenu">
+                <a href="whoweare">  <button mat-menu-item>Who we are</button></a>
+              
+                <button mat-menu-item>Partners</button>
+              </mat-menu> -->
+          
+            <!-- <a href="projects" mat-button class="d">       
+              <mat-icon></mat-icon>
+              <b>Our Projects</b>
+            </a>
+            <a href="mission" mat-button class="d">       
+              <mat-icon></mat-icon>
+              <b>Mission</b>
+            </a>
+            <a href="partners" mat-button class="d">       
+              <mat-icon></mat-icon>
+              <b>Our Team</b>
+            </a> -->
+  
+            <!-- <a href="joinus" mat-button class="c">
+              <mat-icon></mat-icon> 
+              <b>Join Us</b>
+            </a> -->
+         <a href="dataplan" mat-button class="b">
+              <mat-icon></mat-icon>
+              <b>Dataplan</b>
+            </a>  
+          <a href="coverange" mat-button class="b">
+            <mat-icon></mat-icon>
+            <b>Coverange</b>
+          </a>  
+
+           
+            <a href="contact" mat-button class="b">
+              <mat-icon></mat-icon>
+              <b>Contacts</b>
+            </a>  
+            <!-- <a href="login" mat-button class="f">
+              <mat-icon></mat-icon>
+              <b>Login</b>
+            </a> -->
+            <a href="donate" mat-button class="g" style="background-color: red;    text-align: right !important;">
+              <mat-icon class="white-icon"></mat-icon>
+              <b>Donate</b>
+            </a>  
+          </div>
+        </mat-toolbar-row>
+      </mat-toolbar>
+      <div >
+      <mat-sidenav-container class="custom-sidenav-container" fxFlexFill style="height: 100vh;" >
+        <mat-sidenav #sidenav  >
+          
+         
+          <mat-nav-list  >
+            <a href="whoweare" mat-list-item >
+              <mat-icon></mat-icon> 
+              About Us
+            </a> 
+            <a href="projects" mat-list-item>
+              <mat-icon></mat-icon>
+              Projects</a>
+              <a href="partners" mat-list-item>
+                <mat-icon></mat-icon>
+                Our Team</a>
+  
+              <!-- <a href="joinus" mat-list-item>
+                <mat-icon></mat-icon> 
+                Join Us</a> -->
+            
+            <a href="contact" mat-list-item>
+              <mat-icon></mat-icon>
+              Contacts
+            </a>
+            <a href="mission" mat-list-item>
+              <mat-icon></mat-icon>
+              Mission
+            </a>
+            <a href="donate"  mat-list-item style="background-color: red;">
+              <mat-icon></mat-icon>
+              Donate
+            </a>
+  
+            <!-- <a href="login" mat-list-item>
+              <mat-icon></mat-icon>
+              Login
+            </a> -->
+  
+            <a (click)="sidenav.toggle()" mat-list-item>
+              <mat-icon></mat-icon> Close
+            </a>
+          </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content fxFlexFill>
+          <router-outlet></router-outlet>
+      </mat-sidenav-content>
+      </mat-sidenav-container>
     </div>
-      <ul class="navbar-nav ml-auto nav-flex-icons">
-        <a class="dropdown-item" href="dataplan" >Dataplan</a>
-        <a class="dropdown-item" href="coverange" >Coverange</a>
-        <a class="dropdown-item" routerLink="signin" >SignIn</a>
-        <a class="dropdown-item" routerLink="signup" >SingUp</a> 
-      </ul>
-</div>
-</nav> -->
+    </div>         
+     
+  </div>
